@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body><canvas id="myCanvas" width="500" height="500"  style="border:2px solid #3377FF;"  >
+</canvas>
+
+  
+  <script>
+function draw1(){
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.rect(0, 0, 500, 500);
+ctx.fillStyle = "green";
+ctx.fill();     
+ctx.beginPath();
+ctx.moveTo(250,250);
+ctx.lineTo(300,250);
+ctx.lineTo(300,265);    
+ctx.lineTo(265,265);
+ctx.lineTo(265,335);
+ctx.lineTo(295,335);
+ctx.lineTo(295,320); 
+ctx.lineTo(270,325);
+ctx.lineTo(300,315);
+ctx.lineTo(300,350);    
+ctx.lineTo(250,350);
+ctx.lineTo(250,250);    
+ctx.fillStyle = "blue";
+ctx.fill();    
+ctx.stroke();
+}
+
+
+function draw2(){  
+var canvas = document.getElementById("myCanvas");
+var cts = canvas.getContext("2d");
+cts.beginPath();
+cts.moveTo(350,250);
+cts.lineTo(400,250);
+cts.lineTo(400,265);  
+cts.lineTo(365,265);    
+cts.lineTo(365,335);
+cts.lineTo(400,335);    
+cts.lineTo(400,350);
+cts.lineTo(350,350);    
+cts.lineTo(350,250);    
+cts.fillStyle = "blue";
+cts.fill();
+cts.stroke();
+}
+      
+function draw3(){
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(450,250); 
+ctx.lineTo(475,350);
+ctx.lineTo(460,350);
+ctx.lineTo(450,310);
+ctx.lineTo(435,350);
+ctx.lineTo(425,350);
+ctx.lineTo(450,250);    
+ctx.fillStyle = "blue";
+ctx.fill();
+ctx.stroke(); 
+}
+    
+  
+  
+draw1()    
+draw2()
+draw3()
+</script> 
+ 
+
+</body>
+</html>
